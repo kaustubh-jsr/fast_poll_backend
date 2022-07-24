@@ -5,6 +5,11 @@ from .models import *
 import json
 # Create your views here.
 
+def index(request):
+    return JsonResponse({
+        'status':'ok'
+    },status=200)
+
 @csrf_exempt
 def create_poll(request):
     if request.method == "POST":
