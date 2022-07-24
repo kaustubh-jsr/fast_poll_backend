@@ -1,1 +1,1 @@
-web: daphne wuphfer_backend.asgi:application -p $PORT -b 0.0.0.0 -v2
+web: daphne fast_poll_backend.asgi:application -p $PORT -b 0.0.0.0 -v2
